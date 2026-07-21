@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+@theme {
+  --font-inter: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-inter antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-primary text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:bg-[#00995c] hover:-translate-y-1;
+  }
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-lg;
+  }
+}
